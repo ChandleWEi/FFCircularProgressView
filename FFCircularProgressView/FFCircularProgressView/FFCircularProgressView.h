@@ -11,6 +11,9 @@
 #import <CoreGraphics/CoreGraphics.h>
 
 @interface FFCircularProgressView : UIButton
+{
+    UIColor *_tintColor;
+}
 
 /**
  * The progress of the view.
