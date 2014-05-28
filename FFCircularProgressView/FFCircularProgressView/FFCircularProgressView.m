@@ -1,3 +1,4 @@
+
 //
 //  FFCircularProgressBar.m
 //  FFCircularProgressBar
@@ -192,8 +193,11 @@
 }
 
 - (void) drawArrow {
+    //半径
     CGFloat radius = (self.bounds.size.width)/2;
+    //角度
     CGFloat ratio = kArrowSizeRatio;
+    //
     CGFloat segmentSize = self.bounds.size.width * ratio;
 
     // Draw icon
@@ -209,8 +213,13 @@
     [path addLineToPoint:CGPointMake(0.0, 0.0)];
     [path closePath];
 
-    [path applyTransform:CGAffineTransformMakeTranslation(-segmentSize /2.0, -segmentSize / 1.2)];
-    [path applyTransform:CGAffineTransformMakeTranslation(radius * (1-ratio), radius* (1-ratio))];
+    [path applyTransform:CGAffineTransformMakeRotation(M_PI)];
+    
+//    [path applyTransform:CGAffineTransformMakeTranslation(-segmentSize /2.0, -segmentSize / 1.2)];
+    [path applyTransform:CGAffineTransformMakeTranslation(radius *(1+2*ratio), radius *(1.08+2*ratio))];
+    
+
+    
     _iconLayer.path = path.CGPath;
     _iconLayer.fillColor = nil;
 }

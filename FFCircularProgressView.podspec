@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Fabiano Francesconi" => "fabiano.francesconi@gmail.com" }
-  s.source       = { :git => "https://github.com/elbryan/FFCircularProgressView.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/ChandleWEi/FFCircularProgressView.git", :tag => s.version.to_s }
 
   s.platform     = :ios
   s.source_files = 'FFCircularProgressView/FFCircularProgressView/*.{h,m}'

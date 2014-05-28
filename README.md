@@ -1,3 +1,6 @@
+* change download arrow to upload arrow 
+
+
 FFCircularProgressView [![Build Status](https://travis-ci.org/elbryan/FFCircularProgressView.png?branch=master)](https://travis-ci.org/elbryan/FFCircularProgressView)
 ======================
 
